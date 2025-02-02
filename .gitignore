@@ -1,0 +1,24 @@
+# Editor
+.idea/
+.vscode/
+
+# Cache
+__pycache__/
+.tox/
+.pytest_cache/
+MANIFEST
+
+# Build
+build/
+*egg-info/
+
+# Test coverage
+.coverage
+coverage.xml
+htmlcov/
+
+# the pydolphinscheduler config
+config.yaml
+
+# Release
+release/
