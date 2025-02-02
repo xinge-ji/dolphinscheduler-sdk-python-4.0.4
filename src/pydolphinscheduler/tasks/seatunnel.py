@@ -18,10 +18,10 @@
 """Task SeaTunnel."""
 
 from pydolphinscheduler.constants import TaskType
-from pydolphinscheduler.core.task import BatchTask
+from pydolphinscheduler.core.task import Task
 
 
-class SeaTunnel(BatchTask):
+class SeaTunnel(Task):
     """Task SeaTunnel object, declare behavior for SeaTunnel task to dolphinscheduler.
     :param name: task name
     """
