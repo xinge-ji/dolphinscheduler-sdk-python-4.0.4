@@ -50,7 +50,7 @@ def test_seatunnel_get_define():
 
     code = 123
     version = 1
-    name = "test_openmldb_get_define"
+    name = "test_seatunnel_get_define"
     expect_task_params = {
         "resourceList": [],
         "localParams": [],

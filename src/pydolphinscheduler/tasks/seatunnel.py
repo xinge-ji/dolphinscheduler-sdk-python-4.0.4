@@ -24,10 +24,6 @@ from pydolphinscheduler.core.task import BatchTask
 class SeaTunnel(BatchTask):
     """Task SeaTunnel object, declare behavior for SeaTunnel task to dolphinscheduler.
     :param name: task name
-    :param zookeeper: SeaTunnel cluster zookeeper address, e.g. 127.0.0.1:2181.
-    :param zookeeper_path: SeaTunnel cluster zookeeper path, e.g. /openmldb.
-    :param execute_mode: Determine the init mode, offline or online. You can switch it in sql statementself.
-    :param sql: SQL statement.
     """
 
     _task_custom_attr = {
@@ -47,7 +43,7 @@ class SeaTunnel(BatchTask):
         *args,
         **kwargs,
     ):
-        super().__init__(name, TaskType.OPENMLDB, *args, **kwargs)
+        super().__init__(name, TaskType.SEATUNNEL, *args, **kwargs)
         self.startup_script = startup_script
         self.raw_script = raw_script
         self.use_custom = use_custom

@@ -16,7 +16,7 @@
 # under the License.
 
 # [start workflow_declare]
-"""A example workflow for task openmldb."""
+"""A example workflow for task seatunnel."""
 
 from pydolphinscheduler.core.workflow import Workflow
 from pydolphinscheduler.tasks.seatunnel import SeaTunnel
